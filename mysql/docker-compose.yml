@@ -1,0 +1,15 @@
+version: '3'
+services:
+    mysqldb:
+        image: mysql
+        container_name: hackson_mysql
+        restart: always
+        environment:
+            - MYSQL_DATABASE=hackson
+            - MYSQL_ROOT_PASSWORD=hackson
+            - MYSQL_USER=hackson
+            - MYSQL_PASSWORD=hackson
+        ports:
+            - "3306:3306"
+        volumes:
+            - "./data/db/mysql:/var/lib/mysql"
