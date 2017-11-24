@@ -11,9 +11,10 @@ public class BlockchainService {
     private static final String CHANNEL_PRIVATE_KEY = "hackson_channel_key";
     private static final String USER_ADDRESS = "hackson_user";
     private static final String USER_PRIVATE_KEY = "hackson_user_key";
+
     private static final String BAAS_HOST = "39.106.70.242";
     private static final int BAAS_PORT = 8080;
-    private final BlockchainServiceFactory serviceFactory = new BlockchainServiceFactory(BAAS_HOST, BAAS_PORT);
+    private static final BlockchainServiceFactory serviceFactory = new BlockchainServiceFactory(BAAS_HOST, BAAS_PORT);
 
     public static void main(String[] args) {
         UserData data = new UserData();
